@@ -10,6 +10,16 @@ Oil palm is an important commodity in Indonesia, with one of the main challenges
 
 Keywords: CNN, HOG-SVM, hyperparameter tuning, image classification, SVM.
 
+## What's Included in the hyperparameter tuning pipeline?
+The hyperparameter tuning pipeline in this repository includes the following components:
+1. Optuna for hyperparameter optimization
+2. Stratified k-fold cross-validation for model validation
+3. Performance evaluation using macro average F1-score and prediction time of single image
+4. Wandb integration for experiment tracking and visualization
+5. Email notifications for monitoring long-running experiments if something goes wrong
+6. Google storage integration for dataset storage and retrieval. E.g, optuna study storage, model checkpoints, emergency autosaves of results.
+7. Data preprocessing and augmentation techniques
+8. Model training and evaluation scripts for SVM, HOG-SVM, and CNN approaches
 
 ## Repository Structure
 The repository is organized as follows:
