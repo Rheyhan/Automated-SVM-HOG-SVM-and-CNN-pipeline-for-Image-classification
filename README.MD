@@ -4,15 +4,23 @@ This repository contains code and resources for classifying oil palm caterpillar
 
 `All API Token and Keys used in this repository have been removed for security and privacy reasons. Please make sure to replace them with your own keys if you intend to run the code.`
 
-## Abstract
+## Abstract Of My Thesis
 
 Oil palm is an important commodity in Indonesia, with one of the main challenges being caterpillar pest attacks. Identifying pest species is a crucial step in preventing such attacks. Therefore, an effective method for species classification is required. This study applies image classification using three approaches: machine learning with Support Vector Machine (SVM), Histogram of Oriented Gradients as a feature extraction technique combined with SVM (HOG-SVM), and deep learning with Convolutional Neural Network (CNN). Each approach was optimized through hyperparameter tuning using Optuna and validated using stratified k-fold cross-validation. Model performance was evaluated using the macro average F1-score and prediction time for a single image. The results show that CNN achieved the best performance with an F1-score of 90% and prediction time of 0.0105 seconds. HOG-SVM obtained an F1-score of 69% with a prediction time of 0.0006 seconds, while SVM only reached 52% with a prediction time of 0.0403 seconds. These findings indicate that CNN excels in handling image data, whereas HOG-SVM can serve as an efficient alternative under limited computational resources.
 
 Keywords: CNN, HOG-SVM, hyperparameter tuning, image classification, SVM.
 
+If ur interested to read the full thesis, you can check it out [here](https://repository.ipb.ac.id/handle/123456789/171785).
+
+## Flows
+The overall flow of the hyperparameter tuning pipeline is as follows:
+
+![alt text](image.png)
+
+
 ## What's Included in the hyperparameter tuning pipeline?
 The hyperparameter tuning pipeline in this repository includes the following components:
-1. Optuna for hyperparameter optimization
+1. Optuna for hyperparameter optimization with TPE
 2. Stratified k-fold cross-validation for model validation
 3. Performance evaluation using macro average F1-score and prediction time of single image
 4. Wandb integration for experiment tracking and visualization
